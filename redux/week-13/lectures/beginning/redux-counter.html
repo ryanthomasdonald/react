@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+
+    <script>
+        const countInc = () => {
+            return {
+                type: "COUNT_INC"
+            }
+        }
+        const countDec = () => {
+            return {
+                type: "COUNT_DEC"
+            }
+        }
+        const countReset = () => {
+            return {
+                type: "COUNT_RESET"
+            }
+        }
+        const reducer = (state, action) => {
+            if(state === undefined){
+                state = {
+                    count: 0
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redux 101</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+
+    <script>
+        // Action Creator = function that returns an object
+        const addContact = (id, firstName, lastName, address) => {
+            return {
+                type: "ADD_CONTACT",
+                data: {
+                    id,                // key/value pairs that match, only typed once without colon
+                    firstName,
+                    lastName,
+                    address
+                }
+            }
+        }
+
+        const removeContact = (id) => {
+            return {
+                type: "REMOVE_CONTACT",
+                id: id
+            }
+        }
+
+        // purpose of the reducer is to update the global state
+        // always passed the current state and the dispatched action
+        const reducer = (state, action) => {
+            // if not state already exists, then reducer is responsible for initialization
+            
+            // this is the global state
+            // "contacts" = array of objects
+            if(state === undefined){
+                state = {
+                    contacts: []
+                }
+            }
+
+            // looking for a matching action
+            if(action.type === "ADD_CONTACT"){
+                // then execute this logic
+                return{
+                    ...state,
+                    contacts: state.contacts.concat(action.data)
+                }
+            }
+            else if(action.type === "REMOVE_CONTACT"){
+                return {
+                    ...state,
+                    contacts: state.contacts.filter(contact => {
+                        return contact.id !== action.id
+                    })
+                }
+            }
+            else{
+                return state
+            }
+        }
+
+        const store = Redux.createStore(reducer)     // pass in a reducer
+        const showState = () => {
+            console.log(store.getState())
+        }
+        store.subscribe(showState)
+        store.dispatch(addContact(1, "Ryan", "Donald", "Atlanta"))
+        store.dispatch(addContact(2, "Devin", "Brock", "Atlanta"))
+        store.dispatch(addContact(3, "James", "Ivy", "Austin"))
+
+        store.dispatch(removeContact(3))
+    </script>
+</body>
+</html>
