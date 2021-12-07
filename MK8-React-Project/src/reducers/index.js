@@ -1,9 +1,9 @@
 import {combineReducers} from "redux"
-import sampleReducer from "./sampleReducer"
+import builderReducer from "./builderReducer"
 
 // access using state.templateReducer.count
 const rootReducer = combineReducers({
-    templateReducer: sampleReducer
+    builderReducer: builderReducer
 })
 
 export default rootReducer

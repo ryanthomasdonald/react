@@ -1,6 +1,9 @@
-const vehicles = [
+const data = [
     {
+        id: 1,
         name: "Standard Kart",
+        type: "kart",
+        img: "StandardKartBodyMK8.png",
         wg: 2,
         ac: 4,
         on: 3,
@@ -16,7 +19,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 2,
         name: "Pipe Frame",
+        type: "kart",
+        img: "PipeFrameBodyMK8.png",
         wg: 1,
         ac: 6,
         on: 3,
@@ -32,7 +38,10 @@ const vehicles = [
         tg: 2
     },
     {
+        id: 3,
         name: "Mach 8",
+        type: "kart",
+        img: "Mach8BodyMK8.png",
         wg: 3,
         ac: 3,
         on: 2,
@@ -48,7 +57,10 @@ const vehicles = [
         tg: 2
     },
     {
+        id: 4,
         name: "Steel Driver",
+        type: "kart",
+        img: "Steel_Driver.png",
         wg: 4,
         ac: 1,
         on: 1,
@@ -64,7 +76,10 @@ const vehicles = [
         tg: 1
     },
     {
+        id: 5,
         name: "Cat Cruiser",
+        type: "kart",
+        img: "CatCruiserBodyMK8.png",
         wg: 2,
         ac: 5,
         on: 4,
@@ -80,7 +95,10 @@ const vehicles = [
         tg: 4
     },
     {
+        id: 6,
         name: "Circuit Special",
+        type: "kart",
+        img: "CircuitSpecialBodyMK8.png",
         wg: 3,
         ac: 1,
         on: 3,
@@ -96,7 +114,10 @@ const vehicles = [
         tg: 0
     },
     {
+        id: 7,
         name: "Tri-Speeder",
+        type: "kart",
+        img: "TrispeederBodyMK8.png",
         wg: 4,
         ac: 1,
         on: 1,
@@ -112,7 +133,10 @@ const vehicles = [
         tg: 1
     },
     {
+        id: 8,
         name: "Badwagon",
+        type: "kart",
+        img: "BadwagonBodyMK8.png",
         wg: 4,
         ac: 0,
         on: 2,
@@ -128,7 +152,10 @@ const vehicles = [
         tg: 0
     },
     {
+        id: 9,
         name: "Prancer",
+        type: "kart",
+        img: "PrancerBodyMK8.png",
         wg: 1,
         ac: 2,
         on: 1,
@@ -144,7 +171,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 10,
         name: "Biddybuggy",
+        type: "kart",
+        img: "BiddybuggyBodyMK8.png",
         wg: 0,
         ac: 7,
         on: 1,
@@ -160,7 +190,10 @@ const vehicles = [
         tg: 4
     },
     {
+        id: 11,
         name: "Landship",
+        type: "kart",
+        img: "LandshipBodyMK8.png",
         wg: 0,
         ac: 6,
         on: 0,
@@ -176,7 +209,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 12,
         name: "Sneeker",
+        type: "kart",
+        img: "SneakerBodyMK8.png",
         wg: 2,
         ac: 2,
         on: 1,
@@ -192,7 +228,10 @@ const vehicles = [
         tg: 2
     },
     {
+        id: 13,
         name: "Sports Coupe",
+        type: "kart",
+        img: "SportsCoupeMK8.png",
         wg: 3,
         ac: 3,
         on: 2,
@@ -208,7 +247,10 @@ const vehicles = [
         tg: 2
     },
     {
+        id: 14,
         name: "Gold Standard",
+        type: "kart",
+        img: "Gold_Standard.png",
         wg: 2,
         ac: 2,
         on: 1,
@@ -224,7 +266,10 @@ const vehicles = [
         tg: 2
     },
     {
+        id: 15,
         name: "Standard Bike",
+        type: "kart",
+        img: "StandardBikeBodyMK8.png",
         wg: 1,
         ac: 5,
         on: 3,
@@ -240,7 +285,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 16,
         name: "Comet",
+        type: "kart",
+        img: "CometBodyMK8.png",
         wg: 2,
         ac: 5,
         on: 4,
@@ -256,7 +304,10 @@ const vehicles = [
         tg: 4
     },
     {
+        id: 17,
         name: "Sport Bike",
+        type: "kart",
+        img: "SportBikeBodyMK8.png",
         wg: 1,
         ac: 2,
         on: 1,
@@ -272,7 +323,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 18,
         name: "The Duke",
+        type: "kart",
+        img: "TheDukeBodyMK8.png",
         wg: 2,
         ac: 4,
         on: 3,
@@ -288,7 +342,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 19,
         name: "Flame Rider",
+        type: "kart",
+        img: "FlameRiderBodyMK8.png",
         wg: 1,
         ac: 5,
         on: 3,
@@ -304,7 +361,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 20,
         name: "Varmint",
+        type: "kart",
+        img: "VarmintBodyMK8.png",
         wg: 1,
         ac: 6,
         on: 3,
@@ -320,7 +380,10 @@ const vehicles = [
         tg: 2
     },
     {
+        id: 21,
         name: "Mr. Scooty",
+        type: "kart",
+        img: "MrScootyBodyMK8.png",
         wg: 0,
         ac: 7,
         on: 1,
@@ -336,7 +399,10 @@ const vehicles = [
         tg: 4
     },
     {
+        id: 22,
         name: "Jet Bike",
+        type: "kart",
+        img: "JetBikeBodyMK8.png",
         wg: 1,
         ac: 2,
         on: 1,
@@ -352,7 +418,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 23,
         name: "Yoshi Bike",
+        type: "kart",
+        img: "YoshiBikeBodyMK8.png",
         wg: 2,
         ac: 5,
         on: 4,
@@ -368,7 +437,10 @@ const vehicles = [
         tg: 4
     },
     {
+        id: 24,
         name: "Standard ATV",
+        type: "kart",
+        img: "StandardATVBodyMK8.png",
         wg: 4,
         ac: 0,
         on: 2,
@@ -384,7 +456,10 @@ const vehicles = [
         tg: 0
     },
     {
+        id: 25,
         name: "Wild Wiggler",
+        type: "kart",
+        img: "WildWigglerBodyMK8.png",
         wg: 1,
         ac: 5,
         on: 3,
@@ -400,7 +475,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 26,
         name: "Teddy Buggy",
+        type: "kart",
+        img: "TeddyBuggyBodyMK8.png",
         wg: 2,
         ac: 5,
         on: 4,
@@ -416,7 +494,10 @@ const vehicles = [
         tg: 4
     },
     {
+        id: 27,
         name: "GLA",
+        type: "kart",
+        img: "GLA-MK8.png",
         wg: 4,
         ac: 0,
         on: 2,
@@ -432,7 +513,10 @@ const vehicles = [
         tg: 0
     },
     {
+        id: 28,
         name: "W 25 Silver Arrow",
+        type: "kart",
+        img: "W25SilverArrow-MK8.png",
         wg: 1,
         ac: 5,
         on: 3,
@@ -448,7 +532,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 29,
         name: "300 SL Roadster",
+        type: "kart",
+        img: "300SLRoadster_MK8.png",
         wg: 2,
         ac: 4,
         on: 3,
@@ -464,7 +551,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 30,
         name: "Blue Falcon",
+        type: "kart",
+        img: "MK8BlueFalcon.png",
         wg: 0,
         ac: 3,
         on: 1,
@@ -480,7 +570,10 @@ const vehicles = [
         tg: 1
     },
     {
+        id: 31,
         name: "Tanooki Kart",
+        type: "kart",
+        img: "MK8_Tanooki_Buggy_Sprite.png",
         wg: 3,
         ac: 2,
         on: 4,
@@ -496,7 +589,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 32,
         name: "B Dasher",
+        type: "kart",
+        img: "ZeldaMK8Bdasher.png",
         wg: 3,
         ac: 1,
         on: 3,
@@ -512,7 +608,10 @@ const vehicles = [
         tg: 0
     },
     {
+        id: 33,
         name: "Master Cycle",
+        type: "kart",
+        img: "MK8MasterCycle.png",
         wg: 2,
         ac: 2,
         on: 1,
@@ -528,7 +627,10 @@ const vehicles = [
         tg: 2
     },
     {
+        id: 34,
         name: "Streetle",
+        type: "kart",
+        img: "MK8Streetle.png",
         wg: 0,
         ac: 6,
         on: 0,
@@ -544,7 +646,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 35,
         name: "P-Wing",
+        type: "kart",
+        img: "MK8PWing.png",
         wg: 3,
         ac: 1,
         on: 3,
@@ -560,7 +665,10 @@ const vehicles = [
         tg: 0
     },
     {
+        id: 36,
         name: "City Tripper",
+        type: "kart",
+        img: "MK8_Light-Green_City_Tripper.png",
         wg: 1,
         ac: 6,
         on: 3,
@@ -576,7 +684,10 @@ const vehicles = [
         tg: 2
     },
     {
+        id: 37,
         name: "Bone Rattler",
+        type: "kart",
+        img: "MK8BoneRattler.png",
         wg: 4,
         ac: 1,
         on: 1,
@@ -592,7 +703,10 @@ const vehicles = [
         tg: 1
     },
     {
+        id: 38,
         name: "Koopa Clown",
+        type: "kart",
+        img: "MK8DX_Koopa_Clown.png",
         wg: 3,
         ac: 2,
         on: 4,
@@ -608,7 +722,10 @@ const vehicles = [
         tg: 3
     },
     {
+        id: 39,
         name: "Splat Buggy",
+        type: "kart",
+        img: "MK8DX_Splat_Buggy.png",
         wg: 0,
         ac: 3,
         on: 1,
@@ -624,7 +741,10 @@ const vehicles = [
         tg: 1
     },
     {
+        id: 40,
         name: "Inkstriker",
+        type: "kart",
+        img: "MK8DX_Inkstriker.png",
         wg: 3,
         ac: 3,
         on: 2,
@@ -638,12 +758,12 @@ const vehicles = [
         tw: 2,
         ta: 4,
         tg: 2
-    }
-]
-
-const drivers = [
+    },
     {
+        id: 41,
         name: "Mario",
+        type: "driver",
+        img: "MK8_Mario_Icon.png",
         wg: 6,
         ac: 2,
         on: 4,
@@ -659,7 +779,10 @@ const drivers = [
         tg: 4
     },
     {
+        id: 42,
         name: "Luigi",
+        type: "driver",
+        img: "MK8_Luigi_Icon.png",
         wg: 6,
         ac: 2,
         on: 5,
@@ -675,7 +798,10 @@ const drivers = [
         tg: 5
     },
     {
+        id: 43,
         name: "Peach",
+        type: "driver",
+        img: "MK8_Peach_Icon.png",
         wg: 4,
         ac: 3,
         on: 3,
@@ -691,7 +817,10 @@ const drivers = [
         tg: 5
     },
     {
+        id: 44,
         name: "Daisy",
+        type: "driver",
+        img: "MK8_Daisy_Icon.png",
         wg: 4,
         ac: 3,
         on: 3,
@@ -707,7 +836,10 @@ const drivers = [
         tg: 5
     },
     {
+        id: 45,
         name: "Yoshi",
+        type: "driver",
+        img: "MK8_Yoshi_Icon.png",
         wg: 4,
         ac: 3,
         on: 3,
@@ -723,7 +855,10 @@ const drivers = [
         tg: 5
     },
     {
+        id: 46,
         name: "Toad",
+        type: "driver",
+        img: "MK8_Toad_Icon.png",
         wg: 3,
         ac: 4,
         on: 3,
@@ -739,7 +874,10 @@ const drivers = [
         tg: 7
     },
     {
+        id: 47,
         name: "Toadette",
+        type: "driver",
+        img: "MK8_Toadette_Icon.png",
         wg: 2,
         ac: 5,
         on: 4,
@@ -755,7 +893,10 @@ const drivers = [
         tg: 7
     },
     {
+        id: 48,
         name: "Koopa Troopa",
+        type: "driver",
+        img: "MK8_Koopa_Icon.png",
         wg: 2,
         ac: 4,
         on: 1,
@@ -771,7 +912,10 @@ const drivers = [
         tg: 8
     },
     {
+        id: 49,
         name: "Bowser",
+        type: "driver",
+        img: "MK8_Bowser_Icon.png",
         wg: 10,
         ac: 0,
         on: 6,
@@ -787,7 +931,10 @@ const drivers = [
         tg: 0
     },
     {
+        id: 50,
         name: "Donkey Kong",
+        type: "driver",
+        img: "MK8_DKong_Icon.png",
         wg: 8,
         ac: 1,
         on: 10,
@@ -803,7 +950,10 @@ const drivers = [
         tg: 2
     },
     {
+        id: 51,
         name: "Wario",
+        type: "driver",
+        img: "MK8_Wario_Icon.png",
         wg: 9,
         ac: 0,
         on: 5,
@@ -819,7 +969,10 @@ const drivers = [
         tg: 1
     },
     {
+        id: 52,
         name: "Waluigi",
+        type: "driver",
+        img: "MK8_Waluigi_Icon.png",
         wg: 8,
         ac: 1,
         on: 10,
@@ -835,7 +988,10 @@ const drivers = [
         tg: 2
     },
     {
+        id: 53,
         name: "Rosalina",
+        type: "driver",
+        img: "MK8_Rosalina_Icon.png",
         wg: 7,
         ac: 1,
         on: 9,
@@ -851,7 +1007,10 @@ const drivers = [
         tg: 3
     },
     {
+        id: 54,
         name: "Metal Mario",
+        type: "driver",
+        img: "MK8_MMario_Icon.png",
         wg: 10,
         ac: 1,
         on: 8,
@@ -867,7 +1026,10 @@ const drivers = [
         tg: 3
     },
     {
+        id: 55,
         name: "Pink Gold Peach",
+        type: "driver",
+        img: "MK8_PGPeach_Icon.png",
         wg: 10,
         ac: 1,
         on: 8,
@@ -883,7 +1045,10 @@ const drivers = [
         tg: 3
     },
     {
+        id: 56,
         name: "Lakitu",
+        type: "driver",
+        img: "MK8_Lakitu_Icon.png",
         wg: 2,
         ac: 4,
         on: 1,
@@ -899,7 +1064,10 @@ const drivers = [
         tg: 8
     },
     {
+        id: 57,
         name: "Shy Guy",
+        type: "driver",
+        img: "MK8_ShyGuy_Icon.png",
         wg: 3,
         ac: 4,
         on: 3,
@@ -915,7 +1083,10 @@ const drivers = [
         tg: 7
     },
     {
+        id: 58,
         name: "Baby Mario",
+        type: "driver",
+        img: "MK8_BabyMario_Icon.png",
         wg: 1,
         ac: 5,
         on: 2,
@@ -931,7 +1102,10 @@ const drivers = [
         tg: 8
     },
     {
+        id: 59,
         name: "Baby Luigi",
+        type: "driver",
+        img: "MK8_BabyLuigi_Icon.png",
         wg: 1,
         ac: 5,
         on: 2,
@@ -947,7 +1121,10 @@ const drivers = [
         tg: 8
     },
     {
+        id: 60,
         name: "Baby Peach",
+        type: "driver",
+        img: "MK8_BabyPeach_Icon.png",
         wg: 0,
         ac: 4,
         on: 3,
@@ -963,7 +1140,10 @@ const drivers = [
         tg: 10
     },
     {
+        id: 61,
         name: "Baby Daisy",
+        type: "driver",
+        img: "MK8_BabyDaisy_Icon.png",
         wg: 0,
         ac: 4,
         on: 3,
@@ -979,7 +1159,10 @@ const drivers = [
         tg: 10
     },
     {
+        id: 62,
         name: "Baby Rosalina",
+        type: "driver",
+        img: "MK8_BabyRosalina_Icon.png",
         wg: 0,
         ac: 5,
         on: 4,
@@ -995,7 +1178,10 @@ const drivers = [
         tg: 9
     },
     {
+        id: 63,
         name: "Larry",
+        type: "driver",
+        img: "MK8_Larry_Icon.png",
         wg: 3,
         ac: 4,
         on: 3,
@@ -1011,7 +1197,10 @@ const drivers = [
         tg: 7
     },
     {
+        id: 64,
         name: "Lemmy",
+        type: "driver",
+        img: "MK8_Lemmy_Icon.png",
         wg: 0,
         ac: 5,
         on: 4,
@@ -1027,7 +1216,10 @@ const drivers = [
         tg: 9
     },
     {
+        id: 65,
         name: "Wendy",
+        type: "driver",
+        img: "MK8_Wendy_Icon.png",
         wg: 2,
         ac: 5,
         on: 4,
@@ -1043,7 +1235,10 @@ const drivers = [
         tg: 7
     },
     {
+        id: 66,
         name: "Ludwig",
+        type: "driver",
+        img: "MK8_Ludwig_Icon.png",
         wg: 6,
         ac: 2,
         on: 4,
@@ -1059,7 +1254,10 @@ const drivers = [
         tg: 4
     },
     {
+        id: 67,
         name: "Iggy",
+        type: "driver",
+        img: "MK8_Iggy_Icon.png",
         wg: 6,
         ac: 2,
         on: 5,
@@ -1075,7 +1273,10 @@ const drivers = [
         tg: 5
     },
     {
+        id: 68,
         name: "Roy",
+        type: "driver",
+        img: "MK8_Roy_Icon.png",
         wg: 8,
         ac: 1,
         on: 10,
@@ -1091,7 +1292,10 @@ const drivers = [
         tg: 2
     },
     {
+        id: 69,
         name: "Morton",
+        type: "driver",
+        img: "MK8_Morton_Icon.png",
         wg: 10,
         ac: 0,
         on: 6,
@@ -1107,7 +1311,10 @@ const drivers = [
         tg: 0
     },
     {
+        id: 70,
         name: "Mii",
+        type: "driver",
+        img: "Mii_MK8.png",
         wg: 6,
         ac: 2,
         on: 4,
@@ -1123,7 +1330,10 @@ const drivers = [
         tg: 4
     },
     {
+        id: 71,
         name: "Tanooki Mario",
+        type: "driver",
+        img: "MK8_Tanooki_Mario_Icon.png",
         wg: 5,
         ac: 3,
         on: 7,
@@ -1139,7 +1349,10 @@ const drivers = [
         tg: 5
     },
     {
+        id: 72,
         name: "Link",
+        type: "driver",
+        img: "MK8_Link_Icon.png",
         wg: 7,
         ac: 1,
         on: 9,
@@ -1155,7 +1368,10 @@ const drivers = [
         tg: 3
     },
     {
+        id: 73,
         name: "Villager (male)",
+        type: "driver",
+        img: "VillagerMale-Icon-MK8.png",
         wg: 5,
         ac: 3,
         on: 7,
@@ -1171,7 +1387,10 @@ const drivers = [
         tg: 5
     },
     {
+        id: 74,
         name: "Isabelle",
+        type: "driver",
+        img: "MK8_Isabelle_Icon.png",
         wg: 2,
         ac: 5,
         on: 4,
@@ -1187,7 +1406,10 @@ const drivers = [
         tg: 7
     },
     {
+        id: 75,
         name: "Cat Peach",
+        type: "driver",
+        img: "MK8_Cat_Peach_Icon.png",
         wg: 3,
         ac: 4,
         on: 2,
@@ -1203,7 +1425,10 @@ const drivers = [
         tg: 6
     },
     {
+        id: 76,
         name: "Dry Bowser",
+        type: "driver",
+        img: "MK8_Dry_Bowser_Icon.png",
         wg: 9,
         ac: 0,
         on: 5,
@@ -1219,7 +1444,10 @@ const drivers = [
         tg: 1
     },
     {
+        id: 77,
         name: "Villager (female)",
+        type: "driver",
+        img: "VillagerFemale-Icon-MK8.png",
         wg: 3,
         ac: 3,
         on: 2,
@@ -1235,7 +1463,10 @@ const drivers = [
         tg: 2
     },
     {
+        id: 78,
         name: "Gold Mario",
+        type: "driver",
+        img: "MK8DX_Gold_Mario_Icon.png",
         wg: 10,
         ac: 1,
         on: 8,
@@ -1251,7 +1482,10 @@ const drivers = [
         tg: 3
     },
     {
+        id: 79,
         name: "Dry Bones",
+        type: "driver",
+        img: "MK8DX_Dry_Bones_Icon.png",
         wg: 1,
         ac: 5,
         on: 2,
@@ -1267,7 +1501,10 @@ const drivers = [
         tg: 8
     },
     {
+        id: 80,
         name: "Bowser Jr.",
+        type: "driver",
+        img: "MK8_Bowser_Jr_Icon.png",
         wg: 2,
         ac: 4,
         on: 1,
@@ -1283,7 +1520,10 @@ const drivers = [
         tg: 8
     },
     {
+        id: 81,
         name: "King Boo",
+        type: "driver",
+        img: "MK8DX_King_Boo_Icon.png",
         wg: 7,
         ac: 1,
         on: 9,
@@ -1299,7 +1539,10 @@ const drivers = [
         tg: 3
     },
     {
+        id: 82,
         name: "Inkling Girl",
+        type: "driver",
+        img: "MK8DX_Female_Inkling_Icon.png",
         wg: 3,
         ac: 4,
         on: 2,
@@ -1315,7 +1558,10 @@ const drivers = [
         tg: 6
     },
     {
+        id: 83,
         name: "Inkling Boy",
+        type: "driver",
+        img: "MK8DX_Male_Inkling_Icon.png",
         wg: 5,
         ac: 3,
         on: 7,
@@ -1329,12 +1575,12 @@ const drivers = [
         tw: 5,
         ta: 5,
         tg: 5
-    }
-]
-
-const tires = [
+    },
     {
+        id: 84,
         name: "Standard",
+        type: "tire",
+        img: "StandardTiresMK8.png",
         wg: 2,
         ac: 4,
         on: 2,
@@ -1350,7 +1596,10 @@ const tires = [
         tg: 3
     },
     {
+        id: 85,
         name: "Monster",
+        type: "tire",
+        img: "MonsterTiresMK8.png",
         wg: 4,
         ac: 2,
         on: 3,
@@ -1366,7 +1615,10 @@ const tires = [
         tg: 1
     },
     {
+        id: 86,
         name: "Roller",
+        type: "tire",
+        img: "RollerTiresMK8.png",
         wg: 0,
         ac: 6,
         on: 0,
@@ -1382,7 +1634,10 @@ const tires = [
         tg: 4
     },
     {
+        id: 87,
         name: "Slim",
+        type: "tire",
+        img: "SlimTiresMK8.png",
         wg: 2,
         ac: 2,
         on: 4,
@@ -1398,7 +1653,10 @@ const tires = [
         tg: 4
     },
     {
+        id: 88,
         name: "Slick",
+        type: "tire",
+        img: "SlickTiresMK8.png",
         wg: 3,
         ac: 1,
         on: 4,
@@ -1414,7 +1672,10 @@ const tires = [
         tg: 1
     },
     {
+        id: 89,
         name: "Metal",
+        type: "tire",
+        img: "MetalTiresMK8.png",
         wg: 4,
         ac: 0,
         on: 1,
@@ -1430,7 +1691,10 @@ const tires = [
         tg: 0
     },
     {
+        id: 90,
         name: "Button",
+        type: "tire",
+        img: "ButtonTiresMK8.png",
         wg: 0,
         ac: 5,
         on: 1,
@@ -1446,7 +1710,10 @@ const tires = [
         tg: 2
     },
     {
+        id: 91,
         name: "Off-Road",
+        type: "tire",
+        img: "Off-Road.png",
         wg: 3,
         ac: 3,
         on: 3,
@@ -1462,7 +1729,10 @@ const tires = [
         tg: 2
     },
     {
+        id: 92,
         name: "Sponge",
+        type: "tire",
+        img: "SpongeTiresMK8.png",
         wg: 1,
         ac: 4,
         on: 2,
@@ -1478,7 +1748,10 @@ const tires = [
         tg: 3
     },
     {
+        id: 93,
         name: "Wood",
+        type: "tire",
+        img: "WoodTiresMK8.png",
         wg: 2,
         ac: 2,
         on: 4,
@@ -1494,7 +1767,10 @@ const tires = [
         tg: 4
     },
     {
+        id: 94,
         name: "Cushion",
+        type: "tire",
+        img: "CushionTiresMK8.png",
         wg: 1,
         ac: 4,
         on: 2,
@@ -1510,7 +1786,10 @@ const tires = [
         tg: 3
     },
     {
+        id: 95,
         name: "Blue Standard",
+        type: "tire",
+        img: "Blue_Standard.png",
         wg: 2,
         ac: 4,
         on: 2,
@@ -1526,7 +1805,10 @@ const tires = [
         tg: 3
     },
     {
+        id: 96,
         name: "Hot Monster",
+        type: "tire",
+        img: "HotMonsterTiresMK8.png",
         wg: 4,
         ac: 2,
         on: 3,
@@ -1542,7 +1824,10 @@ const tires = [
         tg: 1
     },
     {
+        id: 97,
         name: "Azure Roller",
+        type: "tire",
+        img: "AzureRollerTiresMK8.png",
         wg: 0,
         ac: 6,
         on: 0,
@@ -1558,7 +1843,10 @@ const tires = [
         tg: 4
     },
     {
+        id: 98,
         name: "Crimson Slim",
+        type: "tire",
+        img: "CrimsonSlimTiresMK8.png",
         wg: 2,
         ac: 2,
         on: 4,
@@ -1574,7 +1862,10 @@ const tires = [
         tg: 4
     },
     {
+        id: 99,
         name: "Cyber Slick",
+        type: "tire",
+        img: "CyberSlickTiresMK8.png",
         wg: 3,
         ac: 1,
         on: 4,
@@ -1590,7 +1881,10 @@ const tires = [
         tg: 1
     },
     {
+        id: 100,
         name: "Retro Off-Road",
+        type: "tire",
+        img: "Retro_Off-Road.png",
         wg: 3,
         ac: 3,
         on: 3,
@@ -1606,7 +1900,10 @@ const tires = [
         tg: 2
     },
     {
+        id: 101,
         name: "Gold Tires",
+        type: "tire",
+        img: "Gold_Tires_MK8.png",
         wg: 4,
         ac: 0,
         on: 1,
@@ -1622,7 +1919,10 @@ const tires = [
         tg: 0
     },
     {
+        id: 102,
         name: "GLA Tires",
+        type: "tire",
+        img: "GLATires-MK8.png",
         wg: 2,
         ac: 4,
         on: 2,
@@ -1638,7 +1938,10 @@ const tires = [
         tg: 3
     },
     {
+        id: 103,
         name: "Triforce Tires",
+        type: "tire",
+        img: "MK8-TriforceTires.png",
         wg: 3,
         ac: 3,
         on: 3,
@@ -1654,7 +1957,10 @@ const tires = [
         tg: 2
     },
     {
+        id: 104,
         name: "Leaf Tires",
+        type: "tire",
+        img: "Leaf_Tires_MK8.png",
         wg: 0,
         ac: 5,
         on: 1,
@@ -1667,233 +1973,274 @@ const tires = [
         tl: 3,
         tw: 3,
         ta: 4,
+        tg: 2
+    },
+    {
+        id: 105,
+        name: "Super Glider",
+        type: "glider",
+        img: "SuperGliderMK8.png",
+        wg: 1,
+        ac: 1,
+        on: 1,
+        of: 1,
+        mt: 1,
+        sl: 1,
+        sw: 1,
+        sa: 0,
+        sg: 2,
+        tl: 1,
+        tw: 0,
+        ta: 1,
+        tg: 1
+    },
+    {
+        id: 106,
+        name: "Cloud Glider",
+        type: "glider",
+        img: "Cloud_Glider.png",
+        wg: 0,
+        ac: 2,
+        on: 1,
+        of: 1,
+        mt: 2,
+        sl: 0,
+        sw: 1,
+        sa: 1,
+        sg: 1,
+        tl: 1,
+        tw: 0,
+        ta: 1,
+        tg: 2
+    },
+    {
+        id: 107,
+        name: "Wario Wing",
+        type: "glider",
+        img: "WarioWingMK8.png",
+        wg: 2,
+        ac: 1,
+        on: 2,
+        of: 0,
+        mt: 1,
+        sl: 1,
+        sw: 0,
+        sa: 1,
+        sg: 2,
+        tl: 1,
+        tw: 1,
+        ta: 0,
+        tg: 1
+    },
+    {
+        id: 108,
+        name: "Waddle Wing",
+        type: "glider",
+        img: "WaddleWingMK8.png",
+        wg: 1,
+        ac: 1,
+        on: 1,
+        of: 1,
+        mt: 1,
+        sl: 1,
+        sw: 1,
+        sa: 0,
+        sg: 2,
+        tl: 1,
+        tw: 0,
+        ta: 1,
+        tg: 1
+    },
+    {
+        id: 109,
+        name: "Peach Parasol",
+        type: "glider",
+        img: "PeachParasolGliderMK8.png",
+        wg: 1,
+        ac: 2,
+        on: 2,
+        of: 0,
+        mt: 2,
+        sl: 0,
+        sw: 0,
+        sa: 1,
+        sg: 1,
+        tl: 1,
+        tw: 1,
+        ta: 0,
+        tg: 2
+    },
+    {
+        id: 110,
+        name: "Parachute",
+        type: "glider",
+        img: "ParachuteGliderMK8.png",
+        wg: 0,
+        ac: 2,
+        on: 1,
+        of: 1,
+        mt: 2,
+        sl: 0,
+        sw: 1,
+        sa: 1,
+        sg: 1,
+        tl: 1,
+        tw: 0,
+        ta: 1,
+        tg: 2
+    },
+    {
+        id: 111,
+        name: "Parafoil",
+        type: "glider",
+        img: "ParafoilGliderMK8.png",
+        wg: 1,
+        ac: 2,
+        on: 2,
+        of: 0,
+        mt: 2,
+        sl: 0,
+        sw: 0,
+        sa: 1,
+        sg: 1,
+        tl: 1,
+        tw: 1,
+        ta: 0,
+        tg: 2
+    },
+    {
+        id: 112,
+        name: "Flower Glider",
+        type: "glider",
+        img: "FlowerGliderMK8.png",
+        wg: 0,
+        ac: 2,
+        on: 1,
+        of: 1,
+        mt: 2,
+        sl: 0,
+        sw: 1,
+        sa: 1,
+        sg: 1,
+        tl: 1,
+        tw: 0,
+        ta: 1,
+        tg: 2
+    },
+    {
+        id: 113,
+        name: "Bowser Kite",
+        type: "glider",
+        img: "BowserKiteMK8.png",
+        wg: 1,
+        ac: 2,
+        on: 2,
+        of: 0,
+        mt: 2,
+        sl: 0,
+        sw: 0,
+        sa: 1,
+        sg: 1,
+        tl: 1,
+        tw: 1,
+        ta: 0,
+        tg: 2
+    },
+    {
+        id: 114,
+        name: "Plane Glider",
+        type: "glider",
+        img: "PlaneGliderMK8.png",
+        wg: 2,
+        ac: 1,
+        on: 2,
+        of: 0,
+        mt: 1,
+        sl: 1,
+        sw: 0,
+        sa: 1,
+        sg: 2,
+        tl: 1,
+        tw: 1,
+        ta: 0,
+        tg: 1
+    },
+    {
+        id: 115,
+        name: "MKTV Parafoil",
+        type: "glider",
+        img: "MKTVParafoilGliderMK8.png",
+        wg: 1,
+        ac: 2,
+        on: 2,
+        of: 0,
+        mt: 2,
+        sl: 0,
+        sw: 0,
+        sa: 1,
+        sg: 1,
+        tl: 1,
+        tw: 1,
+        ta: 0,
+        tg: 2
+    },
+    {
+        id: 116,
+        name: "Gold Glider",
+        type: "glider",
+        img: "GoldGliderMK8.png",
+        wg: 2,
+        ac: 1,
+        on: 2,
+        of: 0,
+        mt: 1,
+        sl: 1,
+        sw: 0,
+        sa: 1,
+        sg: 2,
+        tl: 1,
+        tw: 1,
+        ta: 0,
+        tg: 1
+    },
+    {
+        id: 117,
+        name: "Hylian Kite",
+        type: "glider",
+        img: "MK8-HylianKite.png",
+        wg: 1,
+        ac: 1,
+        on: 1,
+        of: 1,
+        mt: 1,
+        sl: 1,
+        sw: 1,
+        sa: 0,
+        sg: 2,
+        tl: 1,
+        tw: 0,
+        ta: 1,
+        tg: 1
+    },
+    {
+        id: 118,
+        name: "Paper Glider",
+        type: "glider",
+        img: "PaperGliderIcon-MK8.png",
+        wg: 0,
+        ac: 2,
+        on: 1,
+        of: 1,
+        mt: 2,
+        sl: 0,
+        sw: 1,
+        sa: 1,
+        sg: 1,
+        tl: 1,
+        tw: 0,
+        ta: 1,
         tg: 2
     }
 ]
 
-const gliders = [
-    {
-        name: "Super Glider",
-        wg: 1,
-        ac: 1,
-        on: 1,
-        of: 1,
-        mt: 1,
-        sl: 1,
-        sw: 1,
-        sa: 0,
-        sg: 2,
-        tl: 1,
-        tw: 0,
-        ta: 1,
-        tg: 1
-    },
-    {
-        name: "Cloud Glider",
-        wg: 0,
-        ac: 2,
-        on: 1,
-        of: 1,
-        mt: 2,
-        sl: 0,
-        sw: 1,
-        sa: 1,
-        sg: 1,
-        tl: 1,
-        tw: 0,
-        ta: 1,
-        tg: 2
-    },
-    {
-        name: "Wario Wing",
-        wg: 2,
-        ac: 1,
-        on: 2,
-        of: 0,
-        mt: 1,
-        sl: 1,
-        sw: 0,
-        sa: 1,
-        sg: 2,
-        tl: 1,
-        tw: 1,
-        ta: 0,
-        tg: 1
-    },
-    {
-        name: "Waddle Wing",
-        wg: 1,
-        ac: 1,
-        on: 1,
-        of: 1,
-        mt: 1,
-        sl: 1,
-        sw: 1,
-        sa: 0,
-        sg: 2,
-        tl: 1,
-        tw: 0,
-        ta: 1,
-        tg: 1
-    },
-    {
-        name: "Peach Parasol",
-        wg: 1,
-        ac: 2,
-        on: 2,
-        of: 0,
-        mt: 2,
-        sl: 0,
-        sw: 0,
-        sa: 1,
-        sg: 1,
-        tl: 1,
-        tw: 1,
-        ta: 0,
-        tg: 2
-    },
-    {
-        name: "Parachute",
-        wg: 0,
-        ac: 2,
-        on: 1,
-        of: 1,
-        mt: 2,
-        sl: 0,
-        sw: 1,
-        sa: 1,
-        sg: 1,
-        tl: 1,
-        tw: 0,
-        ta: 1,
-        tg: 2
-    },
-    {
-        name: "Parafoil",
-        wg: 1,
-        ac: 2,
-        on: 2,
-        of: 0,
-        mt: 2,
-        sl: 0,
-        sw: 0,
-        sa: 1,
-        sg: 1,
-        tl: 1,
-        tw: 1,
-        ta: 0,
-        tg: 2
-    },
-    {
-        name: "Flower Glider",
-        wg: 0,
-        ac: 2,
-        on: 1,
-        of: 1,
-        mt: 2,
-        sl: 0,
-        sw: 1,
-        sa: 1,
-        sg: 1,
-        tl: 1,
-        tw: 0,
-        ta: 1,
-        tg: 2
-    },
-    {
-        name: "Bowser Kite",
-        wg: 1,
-        ac: 2,
-        on: 2,
-        of: 0,
-        mt: 2,
-        sl: 0,
-        sw: 0,
-        sa: 1,
-        sg: 1,
-        tl: 1,
-        tw: 1,
-        ta: 0,
-        tg: 2
-    },
-    {
-        name: "Plane Glider",
-        wg: 2,
-        ac: 1,
-        on: 2,
-        of: 0,
-        mt: 1,
-        sl: 1,
-        sw: 0,
-        sa: 1,
-        sg: 2,
-        tl: 1,
-        tw: 1,
-        ta: 0,
-        tg: 1
-    },
-    {
-        name: "MKTV Parafoil",
-        wg: 1,
-        ac: 2,
-        on: 2,
-        of: 0,
-        mt: 2,
-        sl: 0,
-        sw: 0,
-        sa: 1,
-        sg: 1,
-        tl: 1,
-        tw: 1,
-        ta: 0,
-        tg: 2
-    },
-    {
-        name: "Gold Glider",
-        wg: 2,
-        ac: 1,
-        on: 2,
-        of: 0,
-        mt: 1,
-        sl: 1,
-        sw: 0,
-        sa: 1,
-        sg: 2,
-        tl: 1,
-        tw: 1,
-        ta: 0,
-        tg: 1
-    },
-    {
-        name: "Hylian Kite",
-        wg: 1,
-        ac: 1,
-        on: 1,
-        of: 1,
-        mt: 1,
-        sl: 1,
-        sw: 1,
-        sa: 0,
-        sg: 2,
-        tl: 1,
-        tw: 0,
-        ta: 1,
-        tg: 1
-    },
-    {
-        name: "Paper Glider",
-        wg: 0,
-        ac: 2,
-        on: 1,
-        of: 1,
-        mt: 2,
-        sl: 0,
-        sw: 1,
-        sa: 1,
-        sg: 1,
-        tl: 1,
-        tw: 0,
-        ta: 1,
-        tg: 2
-    }
-]
+export default data

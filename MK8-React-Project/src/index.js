@@ -8,7 +8,9 @@ import reducer from "./reducers/index"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
-import Sample from './components/Sample';
+// import Sample from './components/Sample';
+import Builder from './components/Builder.js';
+import Cart from './components/Cart';
 
 const saveToLocalStorage = (reduxGlobalState) => {
   // serialization = converting js object into a string
@@ -48,7 +50,9 @@ ReactDOM.render(
         <BaseLayout>
           <Routes>
             <Route path="/" element={<App />}/>
-            <Route path="/sample" element={<Sample />}/>
+            {/* <Route path="/sample" element={<Sample />}/> */}
+            <Route path="/builder" element={<Builder />}/>
+            <Route path="/cart" element={<Cart />}/>
           </Routes>
         </BaseLayout>
       </Router>

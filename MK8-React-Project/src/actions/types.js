@@ -1,1 +1,6 @@
-export const INCREMENT = "INCREMENT"
+export const UPDATE_DRIVER = "UPDATE_DRIVER"
+export const UPDATE_KART = "UPDATE_KART"
+export const UPDATE_TIRE = "UPDATE_TIRE"
+export const UPDATE_GLIDER = "UPDATE_GLIDER"
+export const LOAD_INIT = "LOAD_INIT"
+export const LOAD_MKDATA = "LOAD_MKDATA"
