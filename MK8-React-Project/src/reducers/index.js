@@ -1,9 +1,10 @@
 import {combineReducers} from "redux"
 import builderReducer from "./builderReducer"
+// import cartReducer from "./cartReducer"
 
-// access using state.templateReducer.count
 const rootReducer = combineReducers({
-    builderReducer: builderReducer
+    builderReducer: builderReducer,
+    // cartReducer: cartReducer,
 })
 
 export default rootReducer

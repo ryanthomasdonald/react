@@ -3,6 +3,8 @@ import {UPDATE_KART} from "../actions/types"
 import {UPDATE_TIRE} from "../actions/types"
 import {UPDATE_GLIDER} from "../actions/types"
 import {LOAD_INIT} from "../actions/types"
+import {ADD_TO_CART} from "../actions/types"
+import {DELETE_BUILD} from "../actions/types"
 import MKData from "../assets/MK8-data.js"
 
 const initialState = {
@@ -82,7 +84,7 @@ const initialState = {
         ta: 1,
         tg: 1
     },
-    combo: []
+    comboArr: []
 }
 
 const builderReducer = (state=initialState, action) => {
@@ -93,7 +95,8 @@ const builderReducer = (state=initialState, action) => {
                 driver: action.initState.driver,
                 kart: action.initState.kart,
                 tire: action.initState.tire,
-                glider: action.initState.glider
+                glider: action.initState.glider,
+                comboArr: state.comboArr
             }
         case UPDATE_DRIVER:
             const newDriver = MKData.filter(item => item.id === action.driverID)
@@ -118,6 +121,30 @@ const builderReducer = (state=initialState, action) => {
             return {
                 ...state,
                 glider: newGlider[0]
+            }
+        case ADD_TO_CART:
+            const comboDriver = MKData.filter(item => item.id === parseInt(action.driverID))
+            const comboKart = MKData.filter(item => item.id === parseInt(action.kartID))
+            const comboTire = MKData.filter(item => item.id === parseInt(action.tireID))
+            const comboGlider = MKData.filter(item => item.id === parseInt(action.gliderID))
+            const comboObj = {
+                id: action.id,
+                driver: comboDriver[0],
+                kart: comboKart[0],
+                tire: comboTire[0],
+                glider: comboGlider[0]
+            }
+            return {
+                ...state,
+                comboArr: state.comboArr.concat(comboObj)
+                }
+        case DELETE_BUILD:
+            console.log(action.buildID)
+            return {
+                ...state,
+                comboArr: state.comboArr.filter(combo => {
+                    return combo.id !== action.buildID
+                })
             }
         default:
             return state
